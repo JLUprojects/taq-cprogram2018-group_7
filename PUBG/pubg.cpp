@@ -764,12 +764,12 @@ void landmine(int *pmov, int *pHP1, int *pHP2, int arr[640][640])
 	int i, q;
 	loadimage(&wall, L"D:/Cprogram/timg2.jpg", 75, 75);
 	loadimage(&background, L"D:/Cprogram/timg3.jpg", 75, 75);
-	int wid[10], hei[10];
+	int wid[50], hei[50];
 	loadimage(&flame, L"D:/Cprogram/flame.jpg", 75, 75);
 	loadimage(&landmine1, L"D:/Cprogram/timg5.jpg", 75, 75);
 	q = *pmov / 12;
 	//find the coordinate
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i <= 49; i++)
 	{
 		if (i % 2 == 0)
 		{
@@ -780,7 +780,7 @@ void landmine(int *pmov, int *pHP1, int *pHP2, int arr[640][640])
 			wid[i] = 4;
 		}
 	}
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i <= 49; i++)
 	{
 		if (i % 2 == 0)
 		{
@@ -848,30 +848,30 @@ void cure(int *pmov, int arr[640][640])
 	int l;
 	int q1;
 	int store = 0;
-	int sub3[100], sub4[100];
+	int sub3[500], sub4[500];
 	int i, sub = 0;
-	int wid1[10], hei1[10] = {};
+	int wid1[50], hei1[50] = {};
 	IMAGE bag1;
 	IMAGE wall, background;
 	loadimage(&wall, L"D:/Cprogram/timg2.jpg", 75, 75);
 	loadimage(&background, L"D:/Cprogram/timg3.jpg", 75, 75);
 	srand((unsigned)time(NULL));
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i <= 49; i++)
 	{
 		wid1[i] = i % 3 + 2;
 	}
 	//hei1[10] = {};
 	q1 = *pmov / 12;
 	loadimage(&bag1, L"D:/Cprogram/timg6.jpg", 75, 75);
-	for (i = 0; i <= 99; i++)
+	for (i = 0; i <= 499; i++)
 	{
 		sub3[i] = rand() % 8;
 	}
-	for (i = 0; i <= 99; i++)
+	for (i = 0; i <= 499; i++)
 	{
 		sub4[i] = rand() % 8;
 	}                                                    //get the coordinate randomly
-	for (l = 0; l <= 9; l++)
+	for (l = 0; l <= 49; l++)
 	{
 		for (i = store; arr[wid1[l] * 75 + 21 + 37][hei1[l] * 75 + 21 + 37] >= 98; i++)
 		{
