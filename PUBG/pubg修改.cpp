@@ -4,7 +4,7 @@
 #include<graphics.h>
 #include<conio.h>
 #include<time.h>
-#include<math.h>               //½øĞĞÓÎÏ·Ç°£¬Çë½«ÎÄ¼şÖĞµÄÍ¼Æ¬·ÅÖÃÔÚDÅÌ cprogramÎÄ¼ş¼ĞÏÂ
+#include<math.h>               //è¿›è¡Œæ¸¸æˆå‰ï¼Œè¯·å°†æ–‡ä»¶ä¸­çš„å›¾ç‰‡æ”¾ç½®åœ¨Dç›˜ cprogramæ–‡ä»¶å¤¹ä¸‹
 #include <tchar.h>
 
 void startup();
